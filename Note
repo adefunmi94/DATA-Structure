@@ -1,0 +1,34 @@
+Possible array question to ask?
+
+1. Does it allow dublicates
+2. does it take negative value
+2. does it allow multiple  pairs that add up to the target numbers,(No only 1 pair of the numbers will add up)
+will there be solution to the questions(No, There may not always be a solution, code solution shoulld be able to figure out if there is or not )
+What to return if the solution is empty array- return Null
+
+working solution For Array
+
+Two pointer technique
+
+
+2,
+
+You are given an integer array height of length n. There are n vertical lines drawn such that the two endpoints of the ith line are (i, 0) and (i, height[i]).
+
+Find two lines that together with the x-axis form a container, such that the container contains the most water.
+
+Return the *maximum amount* of water a container can store.
+
+area = l* w
+where l = length(height) and width = distance btw two substance
+
+[7,3,2,1,9]= 7 and 9 are the possible widest space of water,
+
+4-0= distance =4 ==min(a,b)
+distance * height = area of bucket
+4* 7 = 28
+
+where w = index (bi,ai)
+possible formula = min(a * b) * (bi - ai)
+
+
